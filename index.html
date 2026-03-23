@@ -15,12 +15,22 @@ header {
     color: white;
     padding: 40px 20px;
 }
-/* This controls your new logo size */
-.logo {
-    max-width: 150px; /* Change this number to make the logo bigger or smaller */
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 8px; /* Optional: Gives the logo slightly rounded corners */
+/* This groups your logo and text together on one line */
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Adds space between the logo and the text */
+    margin-bottom: 10px;
+}
+.header-title h1 {
+    margin: 0; /* Keeps the text perfectly aligned with the image */
+}
+/* This controls your side-by-side logo size */
+.Logo {
+    height: 40px; /* Matches the height of the header text */
+    width: auto;
+    border-radius: 4px; /* Optional: Gives the logo slightly rounded corners */
 }
 section {
     padding: 40px 20px;
@@ -48,10 +58,12 @@ button {
 <body>
 
 <header>
-<img src="Logo.png" alt="Ankit Building Consultant Logo" class="Logo">
-<h1>Ankit Building Consultant</h1>
-<p>Building Your Vision Into Reality</p>
-<button onclick="window.location.href='tel:+919934562693'">Call Now</button>
+  <div class="header-title">
+    <img src="Logo.png" alt="Ankit Building Consultant Logo" class="Logo">
+    <h1>Ankit Building Consultant</h1>
+  </div>
+  <p>Building Your Vision Into Reality</p>
+  <button onclick="window.location.href='tel:+919934562693'">Call Now</button>
 </header>
 
 <section>

@@ -15,22 +15,23 @@ header {
     color: white;
     padding: 40px 20px;
 }
-/* This groups your logo and text together on one line */
+/* This forces the side-by-side layout */
 .header-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px; /* Adds space between the logo and the text */
-    margin-bottom: 10px;
+    gap: 15px;
+    margin-bottom: 15px;
 }
 .header-title h1 {
-    margin: 0; /* Keeps the text perfectly aligned with the image */
+    margin: 0;
+    font-size: 2em;
 }
-/* This controls your side-by-side logo size */
-.Logo {
-    height: 40px; /* Matches the height of the header text */
-    width: auto;
-    border-radius: 4px; /* Optional: Gives the logo slightly rounded corners */
+/* This strictly forces the logo to be small */
+.logo {
+    height: 50px !important;
+    width: auto !important;
+    border-radius: 4px;
 }
 section {
     padding: 40px 20px;
@@ -50,7 +51,8 @@ button {
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 5px; 
+    border-radius: 5px;
+    font-size: 16px;
 }
 </style>
 </head>
@@ -59,7 +61,7 @@ button {
 
 <header>
   <div class="header-title">
-    <img src="Logo.png" alt="Ankit Building Consultant Logo" class="Logo">
+    <img src="logo.jpg" alt="ABC Logo" class="logo">
     <h1>Ankit Building Consultant</h1>
   </div>
   <p>Building Your Vision Into Reality</p>
